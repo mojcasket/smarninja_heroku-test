@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <form method="post" action="/contact">
+        <input name="contact-name" placeholder="Enter name...">
+        <br>
+        <input name="contact-surname" placeholder="Enter surname...">
+        <br>
+        <textarea name="contact-message" placeholder="enter your message"></textarea>
+        <br>
+        <button type="submit">Send form</button>
+
+    </form>
     <p>About!</p>
 {% endblock content %}
